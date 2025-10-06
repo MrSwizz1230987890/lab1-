@@ -1,0 +1,144 @@
+/* Скидання стилів та базові налаштування */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стилі для body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: gray;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Контейнер форми */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Заголовок форми */
+.form-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* Група полів форми */
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+/* Підписи до полів */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Поля вводу */
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+/* Стилі фокусу для полів вводу */
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Стилі для полів з помилкою */
+.form-input.error {
+    border-color: #e74c3c;
+    background-color: #fdf2f2;
+}
+
+/* Повідомлення про помилки */
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Показ повідомлень про помилки */
+.error-message.show {
+    display: block;
+}
+
+/* Кнопка відправки */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: aqua;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Ефект наведення на кнопку */
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Ефект натискання кнопки */
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Повідомлення про успіх */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #c3e6cb;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
+
+/* Показ повідомлення про успіх */
+.success-message.show {
+    display: block;
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+}
