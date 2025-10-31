@@ -1,5 +1,28 @@
-# Vue 3 + Vite
+# My SPA Project
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+SPA застосунок на Vue 3 з використанням Composition API та Vue Router.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Встановлення
+
+npm i
+
+## Запуск
+
+npm run dev
+
+## Збірка
+
+npm run build
+npm run preview
+
+## Структура
+
+- **Home** (`/`) - головна сторінка з описом
+- **Каталог** (`/items`) - список усіх елементів
+- **Деталі** (`/items/:id`) - детальна інформація про елемент
+
+## Технології
+
+- Vue 3 (Composition API)
+- Vue Router
+- Vite
